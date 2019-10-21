@@ -5,14 +5,13 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-       return MaterialApp(
-        title: 'CUCSC Conference',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('CUCSC Conference'),
-          ),
-        ));
+    return MaterialApp(
+      title: 'Detroit Meets',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Detroit Meets'),
+        ),
+      ),
+    );
   }
 }
-
- 

@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.all(8),
                 child: Column(
                   children: <Widget>[
-                    Image.asset('assets/cucsc.jpeg'),
+                    Image.asset('assets/detroit_meets.jpeg'),
                     Padding(
                       padding: const EdgeInsets.all(8),
                     ),

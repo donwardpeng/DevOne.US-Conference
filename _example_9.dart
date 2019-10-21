@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
             body: Card(
               child: Column(
                 children: <Widget>[
-                  Image.asset('assets/cucsc.jpeg'),
+                  Image.asset('assets/detroit_meets.jpeg'),
                   Padding(
                   padding: const EdgeInsets.all(8),
                 ),

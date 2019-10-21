@@ -11,20 +11,18 @@ class MyApp extends StatelessWidget {
             appBar: AppBar(
               title: Text('Detroit Meets'),
             ),
-            body: Stack(children: <Widget>[
-              ListView(children: <Widget>[
-                Card(
-                  margin: EdgeInsets.all(8),
-                  child: Column(
-                    children: <Widget>[
-                      Image.asset('assets/cucsc.jpeg'),
-                      Padding(
-                        padding: const EdgeInsets.all(8),
-                      ),
-                    ],
-                  ),
-                )
-              ])
-            ])));
-  }
+           body: ListView(children: <Widget>[
+              Card(
+                margin: EdgeInsets.all(8),
+                child: Column(
+                  children: <Widget>[
+                    Image.asset('assets/detroit_meets.jpeg'),
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                    ),
+                  ],
+                ),
+              )
+            ]),
+            floatingActionButton: ,));
 }
