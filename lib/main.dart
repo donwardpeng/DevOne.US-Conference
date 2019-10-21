@@ -12,9 +12,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   // Declare a set list of images to cycle through
   final List<Image> _itemImages = [
-    Image.asset('assets/cucsc.jpeg'),
-    Image.asset('assets/u_of_w.png'),
-    Image.asset('assets/vacation.jpg')
+    Image.asset('assets/detroit_cityscape.jpg'),
+    Image.asset('assets/detroit_meets.jpeg'),
+    Image.asset('assets/tigers-d.jpg')
   ];
 
   int _index = 0;
@@ -35,36 +35,57 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'CUCSC Conference',
+        title: 'Detroit Meets',
         home: Scaffold(
-            appBar: AppBar(
-              title: Text('CUCSC Conference'),
-            ),
-            body: Stack(children: <Widget>[
-              ListView(
-                children: _listOfImagesForScreen
-                    .map((element) => Card(
-                          margin: EdgeInsets.all(8),
-                          child: Column(
-                            children: <Widget>[
-                              element,
-                              Padding(
-                                padding: const EdgeInsets.all(8),
-                              ),
-                            ],
+          appBar: AppBar(
+            title: Text('Detroit Meets'),
+          ),
+          body: ListView(
+            children: _listOfImagesForScreen
+                .map((element) => Card(
+                      margin: EdgeInsets.all(8),
+                      child: Column(
+                        children: <Widget>[
+                          element,
+                          Padding(
+                            padding: const EdgeInsets.all(8),
                           ),
-                        ))
-                    .toList(),
-              ),
-              Positioned(
-                  bottom: 16.0,
-                  right: 16.0,
-                  child: FloatingActionButton(
-                    child: const Icon(Icons.add),
-                    onPressed: () {
-                      onButtonPressed();
-                    },
-                  ))
-            ])));
+                        ],
+                      ),
+                    ))
+                .toList(),
+          ),
+          floatingActionButton: FloatingActionButton(
+              child: const Icon(Icons.add),
+              onPressed: () {
+                onButtonPressed();
+              }),
+          drawer: Drawer(
+            child: ListView(
+                // Important: Remove any padding from the ListView.
+                padding: EdgeInsets.zero,
+                children: <Widget>[
+                  Container(
+                      height: 128.0,
+                      child: DrawerHeader(
+                        child: Text(
+                          'Detroit Meets',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 40, color: Colors.white),
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                      )),
+                  Container(
+                    padding: EdgeInsets.only(left: 20),
+                    child: Text(
+                      "Menu Item 1 ",
+                      style: TextStyle(fontSize: 28),
+                    ),
+                  )
+                ]),
+          ),
+        ));
   }
 }

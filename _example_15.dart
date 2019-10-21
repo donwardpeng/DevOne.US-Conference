@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-       title: 'CUCSC Conference',
+       title: 'Detroit Meets',
         home: Scaffold(
             appBar: AppBar(
-              title: Text('CUCSC Conference'),
+              title: Text('Detroit Meets'),
             ),
             body: Stack(children: <Widget>[
               ListView(children: <Widget>[
