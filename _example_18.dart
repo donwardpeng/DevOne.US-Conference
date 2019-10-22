@@ -60,32 +60,6 @@ class _MyAppState extends State<MyApp> {
               onPressed: () {
                 onButtonPressed();
               }),
-          drawer: Drawer(
-            child: ListView(
-                // Important: Remove any padding from the ListView.
-                padding: EdgeInsets.zero,
-                children: <Widget>[
-                  Container(
-                      height: 128.0,
-                      child: DrawerHeader(
-                        child: Text(
-                          'Detroit Meets',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 40, color: Colors.white),
-                        ),
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                        ),
-                      )),
-                  Container(
-                    padding: EdgeInsets.only(left: 20),
-                    child: Text(
-                      "Menu Item 1 ",
-                      style: TextStyle(fontSize: 28),
-                    ),
-                  )
-                ]),
-          ),
         ));
   }
 }

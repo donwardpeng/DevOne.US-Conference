@@ -25,7 +25,8 @@ class MyApp extends StatelessWidget {
             )
           ]),
           floatingActionButton: FloatingActionButton(
-              child: const Icon(Icons.add),),
+            child: const Icon(Icons.add),
+          ),
         ));
   }
 }
