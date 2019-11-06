@@ -1,7 +1,7 @@
-# Detroit Meets Flutter Presentations and Code by Don Ward
+# DevOne Conference Intro to Flutter Presentation and Code by Don Ward
 
 ## What is this?
-This repo contains the slide decks and accompanying example project for Don Ward's Flutter Presentations at the Detroit Meets meeting on Oct 22, 2019. 
+This repo contains the slide decks and accompanying example project for Don Ward's Intro to Flutter from the DevOne conference  on Nov 7, 2019 in downtown Detroit. 
 
 ## Where can I find more info?
 Additionally, below are some more resources to get you started with Flutter:
